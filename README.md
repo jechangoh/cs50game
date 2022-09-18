@@ -1,2 +1,17 @@
 # cs50game
-k
+
+Description:
+
+Welcome to my game, "Guess the Word!" This game is one in which players attempt to identify the word that stands in the middle of their screen. However, it is impossible to read the mystery word without any form of aid, because the word and the background color are both white. The player must use circles, which are bouncing around the screen in random radii, speed, and color, to find out the mystery word. As the circles are colored and often go behind the mystery word, the player can rely on the moment during which a circle passes behind the mystery word and identify it.
+
+The game consists of three levels; level 1 is most easy, while level 3 is most difficult. As the level increases, the number and size of the circles bouncing around in the screen decreases. The decrease in the number of circles makes it much less likely for a circle to pass behind the mystery word. Moreover, the decrease in the size of the circles also makes it harder for the player to discern the mystery word, as the circle may not be large enough to reveal all letters of the mystery word. As the player moves on from level one to two, the speed of the circles moving around increases which requires the player to read the mystery word quickly when a circle passes by. In level three, however, the speed of the circles is at its lowest. After experimenting with the sizes and speeds of the circles, it was discovered that a small circle traveling at a slower speed made it more difficult for the player to identify the mystery word.
+
+For every game, regardless of level difficulty, the word in the middle of the screen is chosen at random from an array list of thirty words. As a result, this randomness may serve some benefit to the player, who may see a shorter word to their advantage. In all levels, the font size of the mystery word is set at 1vw, so the size of the word does not affect the difficulty of the game. Furthermore, the font family of the mystery word is constant throughout all levels, but the font, which was chosen from Google Fonts, is slightly italic to make sure the word is not too easy to read at first sight.
+
+Javascript was used to create each circle and to make each one bounce off the walls. This code can be found inside Movement() function.
+
+In the index.html page, there is a background picture (words.png) which was added with html and css. For players who are new to the game, a how-to button is there for people to click on. An alert, which was coded with javascript, shows up once clicked explaining how to play. It is important to read these instructions because they tell you how to submit your answer of the mystery word. The game takes up the entire window screen and the submit section can be found when one scrolls down. There is an input box and a submit button that allows the player to make their guess. If the guess is correct, the input box turns green and "correct!" shows up below. If the guess is incorrect, the input box turns red and "incorrect" shows up below. If the player wants to leave the game, there is a "return home" link at the bottom of the page which links back to index.html.
+
+The player is free to choose whichever level they want to play. For example, a player can choose to play level three first. However, in both level one and level two, there is a link at the bottom of the page that links to the next level. Through CSS, all links have been set to no text decorations.
+
+Lastly, players have all the time to complete each level. There is no timer that counts the time down, and the circles will keep on bouncing.
